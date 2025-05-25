@@ -143,9 +143,9 @@ const AboutUs = () => {
             />
           </div>
           <div className="flex flex-row gap-x-5 py-3">
-            <SocialIcon url="www.instagram.com" />
-            <SocialIcon url="www.facebook.com" />
-            <SocialIcon url="www.web.whatsapp.com" />
+            <SocialIcon url="https://instagram.com/pt.antarsuryajaya" target="_blank" />
+            <SocialIcon url="https://www.facebook.com/pages/Antar-Surya-Jaya-PT-Percetakan/1692800067644519" target="_blank" />
+            <SocialIcon url="https://wa.me/6285648225855" target="_blank"/>
           </div>
         </div>
         <div>

@@ -25,9 +25,9 @@ const Footer = () => {
         </div>
         <div className="flex flex-col w-2/5">
           <div className="flex flex-row justify-end gap-x-5 py-3">
-            <SocialIcon url="www.instagram.com" bgColor="transparent" />
-            <SocialIcon url="www.facebook.com" bgColor="transparent" />
-            <SocialIcon url="www.web.whatsapp.com" bgColor="transparent" />
+            <SocialIcon url="https://instagram.com/pt.antarsuryajaya" target="_blank" bgColor="transparent" />
+            <SocialIcon url="https://www.facebook.com/pages/Antar-Surya-Jaya-PT-Percetakan/1692800067644519" target="_blank" bgColor="transparent" />
+            <SocialIcon url="https://wa.me/6285648225855" target="_blank" bgColor="transparent" />
           </div>
           <div className="flex flex-row justify-end gap-x-5 py-3">
             <a href="/" className="uppercase font-bold">Home</a>
