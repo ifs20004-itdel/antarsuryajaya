@@ -8,7 +8,6 @@
     "@testing-library/react": "^16.3.0",
     "@testing-library/user-event": "^13.5.0",
     "antar-surya-jaya-web": "file:",
-    "google-maps-react-markers": "^2.0.15",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
     "react-router-dom": "^7.6.0",

@@ -7,36 +7,13 @@ import phone_number from "../assets/images/about/phone.png";
 import email from "../assets/images/about/mail.png";
 import clock from "../assets/images/about/clock.png";
 import TextWithIcon from "../components/TextWithIcon";
-import Footer from "../components/Footer"
+import Footer from "../components/Footer";
 import { SocialIcon } from "react-social-icons";
 import "react-social-icons/instagram";
 import "react-social-icons/facebook";
 import "react-social-icons/whatsapp";
 
-// To implement Google Map
-import GoogleMap from "google-maps-react-markers";
-
-const mapContainerStyle = {
-  width: "100%",
-  height: "400px",
-};
-
-const center = {
-  lat: -7.321526,
-  lng: 112.781009, // Example: Rungkut, Surabaya
-};
-
 const AboutUs = () => {
-  const handleApiLoaded = ({ map, maps }) => {
-    new maps.Marker({
-      position: center,
-      map,
-      title: "Percetakan Surya",
-    });
-  };
-
-  const apiKey = process.env.GOOGLE_MAPS_API_KEY;
-
   return (
     <div className="font-poppins">
       <div className="flex flex-row">
@@ -143,25 +120,33 @@ const AboutUs = () => {
             />
           </div>
           <div className="flex flex-row gap-x-5 py-3">
-            <SocialIcon url="https://instagram.com/pt.antarsuryajaya" target="_blank" />
-            <SocialIcon url="https://www.facebook.com/pages/Antar-Surya-Jaya-PT-Percetakan/1692800067644519" target="_blank" />
-            <SocialIcon url="https://wa.me/6285648225855" target="_blank"/>
+            <SocialIcon
+              url="https://instagram.com/pt.antarsuryajaya"
+              target="_blank"
+            />
+            <SocialIcon
+              url="https://www.facebook.com/pages/Antar-Surya-Jaya-PT-Percetakan/1692800067644519"
+              target="_blank"
+            />
+            <SocialIcon url="https://wa.me/6285648225855" target="_blank" />
           </div>
         </div>
         <div>
-        <div className="flex-1 h-[400px]">
-          <p className="text-sm text-gray-600 mt-2">Find us here!</p>
-          <GoogleMap
-            apiKey={apiKey}
-            defaultCenter={center}
-            defaultZoom={15}
-            onGoogleApiLoaded={handleApiLoaded}
-            mapContainerStyle={mapContainerStyle}
-          />
-        </div>
+          <div className="flex-1 h-[400px]">
+            <p className="text-sm text-gray-600 mt-2">Find us here!</p>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3957.187267651994!2d112.7648644!3d-7.3328542!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e788281a524eb99%3A0x98b089824a23db71!2sPT%20Antar%20Surya%20Jaya!5e0!3m2!1sid!2sid!4v1748152347579!5m2!1sid!2sid"
+              width="100%"
+              height="350"
+              allowFullScreen=""
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              title="PT Antar Surya Jaya"
+            />
+          </div>
         </div>
       </div>
-      <Footer/>
+      <Footer />
     </div>
   );
 };
