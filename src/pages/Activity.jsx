@@ -1,7 +1,5 @@
-import Footer from "../components/Footer"
-import ig_post1 from "../assets/images/activity/ig/post1.png";
-import ig_post2 from "../assets/images/activity/ig/post2.png";
-import ig_post3 from "../assets/images/activity/ig/post3.png";
+import Footer from "../components/Footer";
+import { InstagramEmbed } from "react-social-media-embed";
 
 import post_press1 from "../assets/images/activity/training-post-press/1.png";
 import post_press2 from "../assets/images/activity/training-post-press/2.png";
@@ -51,10 +49,10 @@ const Activity = () => {
             Instagram resmi.
           </p>
         </div>
-        <div className="flex flex-row w-full gap-x-5 justify-between px-1">
-          <img src={ig_post1} width={500} alt="Postingan 1" />
-          <img src={ig_post2} alt="Postingan 2" />
-          <img src={ig_post3} alt="Postingan 3" />
+        <div className="flex flex-row w-3/4 m-auto justify-between px-1">
+          <InstagramEmbed url="https://www.instagram.com/p/CmEObRWvSUs"/>
+          <InstagramEmbed url="https://www.instagram.com/p/CpziV_rvvAe"/>
+          <InstagramEmbed url="https://www.instagram.com/p/Cl06FjyvuTK"/>
         </div>
       </div>
       <hr className="py-0.5 bg-gray-500 w-11/12 m-auto" />
@@ -180,60 +178,28 @@ const Activity = () => {
             className="swiperHalalBihalal"
           >
             <SwiperSlide>
-              <img
-                src={habi1}
-                alt="Halal Bihalal 1"
-                className="w-3/5 m-auto"
-              />
+              <img src={habi1} alt="Halal Bihalal 1" className="w-3/5 m-auto" />
             </SwiperSlide>
             <SwiperSlide>
-              <img
-                src={habi2}
-                alt="Halal Bihalal 2"
-                className="w-3/5 m-auto"
-              />
+              <img src={habi2} alt="Halal Bihalal 2" className="w-3/5 m-auto" />
             </SwiperSlide>
             <SwiperSlide>
-              <img
-                src={habi3}
-                alt="Halal Bihalal 3"
-                className="w-3/5 m-auto"
-              />
+              <img src={habi3} alt="Halal Bihalal 3" className="w-3/5 m-auto" />
             </SwiperSlide>
             <SwiperSlide>
-              <img
-                src={habi4}
-                alt="Halal Bihalal 4"
-                className="w-3/5 m-auto"
-              />
+              <img src={habi4} alt="Halal Bihalal 4" className="w-3/5 m-auto" />
             </SwiperSlide>
             <SwiperSlide>
-              <img
-                src={habi5}
-                alt="Halal Bihalal 5"
-                className="w-3/5 m-auto"
-              />
+              <img src={habi5} alt="Halal Bihalal 5" className="w-3/5 m-auto" />
             </SwiperSlide>
             <SwiperSlide>
-              <img
-                src={habi6}
-                alt="Halal Bihalal 6"
-                className="w-3/5 m-auto"
-              />
+              <img src={habi6} alt="Halal Bihalal 6" className="w-3/5 m-auto" />
             </SwiperSlide>
             <SwiperSlide>
-              <img
-                src={habi7}
-                alt="Halal Bihalal 7"
-                className="w-3/5 m-auto"
-              />
+              <img src={habi7} alt="Halal Bihalal 7" className="w-3/5 m-auto" />
             </SwiperSlide>
             <SwiperSlide>
-              <img
-                src={habi8}
-                alt="Halal Bihalal 8"
-                className="w-3/5 m-auto"
-              />
+              <img src={habi8} alt="Halal Bihalal 8" className="w-3/5 m-auto" />
             </SwiperSlide>
           </Swiper>
         </>
@@ -299,7 +265,7 @@ const Activity = () => {
           PERFORMANCE CONTRACT 2024
         </h1>
       </div>
-      <Footer/>
+      <Footer />
     </div>
   );
 };
